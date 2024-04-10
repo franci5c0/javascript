@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATIVIDADE</title>
+    <style>
+
+        body {
+            font: normal 18pt Arial;
+       
+        }
+    
+    input {
+        font: normal 18pt Arial;
+        width: 200px;
+    }
+    
+    div#res {
+        margin-top: 20px
+    }
+    
+    </style>
+</head>
+<body>
+
+    <h1>Calculadora</h1>
+
+<span>N1</span>
+    <input type="number" name="num1" id="num1"><br>
+    <input type="button" value="Quadrado" onclick="quadrado()"><br>
+    <input type="button" value="Cubo" onclick="cubo()"><br>
+    <input type="button" value="Raiz Quadrada" onclick="raizquadrada()" ><br> 
+
+    <br>
+
+    <span>N2</span>
+    <input type="number" name="num2" id="num2"><br>
+    <input type="button" value="Somar" onclick="somar()">
+    <input type="button" value="Subtrair" onclick="subtrair()"><br>
+    <input type="button" value="Multiplicar" onclick="multiplicar()">
+    <input type="button" value="Dividir" onclick="dividir()">
+    <div id="res">Resultado</div>
+
+<script>
+var num1 = window.document.getElementById('num1')
+var num2 = window.document.getElementById('num2')
+
+function quadrado() {
+var n1 = Number(num1.value)
+var q = n1 ** 2
+var res = window.document.getElementById('res')
+res.innerHTML = `${n1} ao quadrado é: ${q}`
+}
+
+function cubo() {
+var n1 = Number(num1.value)
+var c = n1 ** 3
+var res = window.document.getElementById('res')
+res.innerHTML = `${n1} ao cubo é: ${c}`
+}
+
+function raizquadrada() {
+var n1 = Number(num1.value)
+var r = n1 ** (1/2)
+var res = window.document.getElementById('res')
+res.innerHTML = `A raiz quadrada de ${n1} é: ${r}`
+}
+
+function somar() {
+var n1 = Number(num1.value)
+var n2 = Number(num2.value)
+var soma = n1 + n2
+var res = window.document.getElementById('res')
+res.innerHTML = `A soma entre ${n1} + ${n2} é igual a: ${soma}`
+}
+
+function subtrair() {
+var n1 = Number(num1.value)
+ var n2 = Number(num2.value)
+ var sub = n1 - n2
+ var res = window.document.getElementById('res')
+ res.innerHTML = `A subtração de ${n1} - ${n2} é igual a: ${sub}`    
+}
+
+function multiplicar(){
+    var n1 = Number(num1.value)
+    var n2 = Number(num2.value)
+    var mult = n1 * n2
+    var res = window.document.getElementById('res')
+    res.innerHTML = `A multiplicação de ${n1} * ${n2} é igual a: ${mult}`
+}
+
+function dividir(){
+var n1 = Number(num1.value)
+ var n2 = Number(num2.value)
+ var div = n1 / n2
+ var res = window.document.getElementById('res')
+ res.innerHTML = `A divisão de ${n1} / ${n2} é igual a: ${div}`
+}
+
+
+
+
+
+
+</script>
+
+
+
+
+
+    
+</body>
+</html>
