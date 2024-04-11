@@ -27,7 +27,7 @@
     <h1>Calculadora</h1>
 
 <span>N1</span>
-    <input type="number" name="num1" id="num1"><br>
+    <input type="number" name="txtn1" id="txtn1"><br>
     <input type="button" value="Quadrado" onclick="quadrado()"><br>
     <input type="button" value="Cubo" onclick="cubo()"><br>
     <input type="button" value="Raiz Quadrada" onclick="raizquadrada()" ><br> 
@@ -35,7 +35,7 @@
     <br>
 
     <span>N2</span>
-    <input type="number" name="num2" id="num2"><br>
+    <input type="number" name="txtn2" id="txtn2"><br>
     <input type="button" value="Somar" onclick="somar()">
     <input type="button" value="Subtrair" onclick="subtrair()"><br>
     <input type="button" value="Multiplicar" onclick="multiplicar()">
@@ -47,8 +47,8 @@ var num1 = window.document.getElementById('num1')
 var num2 = window.document.getElementById('num2')
 
 function quadrado() {
-var n1 = Number(num1.value)
-var q = n1 ** 2
+num1 = Number(document.getElementById('txtn1').value)
+var q = num1 ** 2
 var res = window.document.getElementById('res')
 res.innerHTML = `${n1} ao quadrado é: ${q}`
 }
