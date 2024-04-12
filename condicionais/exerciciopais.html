@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+body {
+text-align: center;
+background-color: blue;
+color: azure;
+font-size: 50px;
+}
+
+input {
+
+    padding: 10px;
+font-size: 20px;
+
+
+}
+
+
+</style>
+</head>
+<body>
+    
+<input type="text" id="pais">
+<input type="button" value="verificar" onclick="verificarPais()">
+<div id="res">Resultado</div>
+
+
+<script>
+function verificarPais(){
+var pais = document.querySelector('input#pais').value;
+var mensagem;
+if(pais.toLowerCase() === 'brasil') {
+    mensagem = 'é brasileiro';
+}
+else {
+    mensagem = 'não é brasileiro';
+}
+document.getElementById('res').innerHTML = mensagem;
+}
+
+
+
+
+</script>
+
+
+</body>
+</html>
