@@ -40,13 +40,13 @@ var idade = document.querySelector("input#idade").valueAsNumber
 var mensagem
 
 if (idade < 16) {
-    console.log('não vota')
+    mensagem = 'não vota'
 }
 else if (idade < 18 || idade > 65) {
-  console.log('voto é opcional')  
+ mensagem = 'voto é opcional'
 }
 else {
-    console.log('voto é obrigatório')
+    mensagem = 'voto é obrigatório'
 }
 
 document.getElementById('res').innerHTML = `você tem ${idade} anos.`
