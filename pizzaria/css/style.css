@@ -17,6 +17,14 @@ margin: auto;
 box-shadow: 5px 5px 10px black;/*deslocamento lateral, vertical e espalhamento*/
 }
 
+div {
+text-align: center;
+}
+
+.imagem-pizzaria {
+text-align: center;
+}
+
 footer {
 color: white;
 text-align: center;
