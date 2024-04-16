@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+   <link rel="stylesheet" href="/pizzaria/css/style.css"
+</head>
+<body onload="carregar()"> <!--quando carregar o site, ele executa-->
+    
+<header class="texto">
+
+        <h1>Verificador de idade</h1>
+</header>
+
+<section>
+
+<div>
+<p>ano de nascimento</p>
+<input type="number" name="txtano" id="txtano" min="1900">
+<p>sexo
+<input type="radio" name="radsex" id="masc" checked>
+<label for="masc">masculino</label>
+<input type="radio" name="radsex" id="fem" checked>
+<label for="fem">feminino</label>
+</p>
+
+<p>
+
+    <input type="button" value="verificar" onclick="verificar()">
+
+</p>
+</div>
+
+
+<div id="res">
+
+preencha os dados para ver o resultado
+
+</div>
+
+</section>
+<footer>
+
+<p&copy class="texto">&copy VS Code Corporation</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -19,14 +19,17 @@ box-shadow: 5px 5px 10px black;/*deslocamento lateral, vertical e espalhamento*/
 
 div {
 text-align: center;
-}
-
-.imagem-pizzaria {
-text-align: center;
+padding: 10px;
 }
 
 footer {
 color: white;
 text-align: center;
 font-style: italic;
+}
+
+
+input {
+
+    cursor: pointer;
 }
